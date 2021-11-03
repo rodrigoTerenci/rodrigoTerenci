@@ -19,7 +19,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   update-readme-with-youtube:
-      name: Update this repo's README with latest youtube videos
+      name: Update this repo's README with latest videos from Youtube
       runs-on: ubuntu-latest
       steps:
         - name: Checkout
