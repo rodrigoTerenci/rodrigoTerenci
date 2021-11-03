@@ -28,7 +28,7 @@ jobs:
           uses: gautamkrishnar/blog-post-workflow@master
           with:
             coment_tag_name: "YOUTUBE"
-            feed_list: "https://www.youtube.com/channel/UCsQvrdBJdCqW1K2A5KpANkA/videos"
+            feed_list: "https://www.youtube.com/channel_id=UCsQvrdBJdCqW1K2A5KpANkA/"
   # This workflow contains a single job called "greet"
   greet:
     # The type of runner that the job will run on
