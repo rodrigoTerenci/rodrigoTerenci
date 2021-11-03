@@ -27,6 +27,7 @@ jobs:
         - name: Pull in dev.to posts
           uses: gautamkrishnar/blog-post-workflow@master
           with:
+            coment_tag_name: "YOUTUBE"
             feed_list: "https://www.youtube.com/channel/UCsQvrdBJdCqW1K2A5KpANkA/videos"
   # This workflow contains a single job called "greet"
   greet:
