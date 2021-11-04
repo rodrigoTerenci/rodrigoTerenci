@@ -6,14 +6,13 @@
 
 - 📫 How to reach me ...
 
-###Latest Blog Posts
-<!-- BLOG-POST-LIST:START -->
-- [Elder Origami - Flor de Leque](https://www.youtube.com/watch?v=1xHgi6n1cc4)
-<!-- BLOG-POST-LIST:END -->
-
 Latest Youtube Videos
 <!-- YOUTUBE:START -->
 <!-- YOUTUBE:END -->
+
+###Latest Blog Posts
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
 
 [webgitio]: https://rodrigoterenci.github.io/
 
