@@ -6,11 +6,11 @@
 
 - 📫 How to reach me ...
 
-Latest Youtube Videos
+### Latest Youtube Videos
 <!-- YOUTUBE:START -->
 <!-- YOUTUBE:END -->
 
-###Latest Blog Posts
+### Latest Blog Posts
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 
