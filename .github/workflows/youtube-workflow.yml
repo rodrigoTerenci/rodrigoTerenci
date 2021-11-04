@@ -1,42 +1,17 @@
 # This is a basic workflow that is manually triggered
-
 name: Latest Youtube Videos
-
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
 on:
-  workflow_dispatch:
-    # Inputs the workflow accepts.
-    inputs:
-      name:
-        # Friendly description to be shown in the UI instead of 'name'
-        description: 'Person to greet'
-        # Default value if no value is explicitly provided
-        default: 'World'
-        # Input has to be provided for the workflow to run
-        required: true
+  schedule: # Run workflow automatically
+    - cron: '0 * * * *' # Runs every hour, on the hour
+  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   update-readme-with-youtube:
-      name: Update this repo's README with latest videos from Youtube
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v2
-        - name: Pull in dev.to posts
-          uses: gautamkrishnar/blog-post-workflow@master
-          with:
-            coment_tag_name: "YOUTUBE"
-            feed_list: "https://www.youtube.com/feeds/videos.xml?channel_id=UCsQvrdBJdCqW1K2A5KpANkA"
-  # This workflow contains a single job called "greet"
-  greet:
-    # The type of runner that the job will run on
+    name: Update this repo's README with latest videos from Youtube
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ github.event.inputs.name }}"
-      
+      - uses: actions/checkout@v2
+      - uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          comment_tag_name: "YOUTUBE"
+          feed_list: "https://www.youtube.com/feeds/videos.xml?channel_id=UCsQvrdBJdCqW1K2A5KpANkA"
