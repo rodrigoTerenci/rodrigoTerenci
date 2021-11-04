@@ -12,6 +12,7 @@
 
 ### Latest Blog Posts
 <!-- BLOG-POST-LIST:START -->
+- [Elder Origami - Flor de Leque](https://www.youtube.com/watch?v=1xHgi6n1cc4)
 <!-- BLOG-POST-LIST:END -->
 
 [webgitio]: https://rodrigoterenci.github.io/
